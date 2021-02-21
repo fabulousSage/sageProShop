@@ -1,0 +1,136 @@
+const products = [
+    {
+        name: 'Shiny Female Wedge',
+        image: '/images/a1.jpg',
+        description:
+            'A wedge-like sandals that provides comfort to your feet. it is very easy and comfortable. Made with a mirror face material which you can easily clean anytime, anywhere and wherever with ease',
+        brand: 'Shiny',
+        category: 'Fashion',
+        price: 4000,
+        countInStock: 3,
+        rating: 4.5,
+        numReviews: 4,
+    },
+    {
+        name: 'Shiny Female Shoe',
+        image: '/images/a2.png',
+        description:
+            'A wedge-like sandals that provides comfort to your feet. it is very easy and comfortable. Made with a mirror face material which you can easily clean anytime, anywhere and wherever with ease',
+        brand: 'Shiny',
+        category: 'Fashion',
+        price: 7000,
+        countInStock: 2,
+        rating: 4.5,
+        numReviews: 4,
+    },
+    {
+        name: 'Shiny Female Sandal',
+        image: '/images/a3.jpg',
+        description:
+            'A wedge-like sandals that provides comfort to your feet. it is very easy and comfortable. Made with a mirror face material which you can easily clean anytime, anywhere and wherever with ease',
+        brand: 'Shiny',
+        category: 'Fashion',
+        price: 5000,
+        countInStock: 3,
+        rating: 4.5,
+        numReviews: 4,
+    },
+    {
+        name: 'Female white Hill',
+        image: '/images/a4.png',
+        description:
+            'A wedge-like sandals that provides comfort to your feet. it is very easy and comfortable. Made with a mirror face material which you can easily clean anytime, anywhere and wherever with ease',
+        brand: 'Shiny',
+        category: 'Fashion',
+        price: 6000,
+        countInStock: 3,
+        rating: 4.5,
+        numReviews: 4,
+    },
+    {
+        name: 'Men Leather Shoe',
+        image: '/images/a5.jpg',
+        description:
+            'A wedge-like sandals that provides comfort to your feet. it is very easy and comfortable. Made with a mirror face material which you can easily clean anytime, anywhere and wherever with ease',
+        brand: 'Men Fashion',
+        category: 'Fashion',
+        price: 4500,
+        countInStock: 3,
+        rating: 4.5,
+        numReviews: 4,
+    },
+    {
+        name: 'Female Red Hill',
+        image: '/images/a6.png',
+        description:
+            'A wedge-like sandals that provides comfort to your feet. it is very easy and comfortable. Made with a mirror face material which you can easily clean anytime, anywhere and wherever with ease',
+        brand: 'Shiny',
+        category: 'Fashion',
+        price: 8000,
+        countInStock: 3,
+        rating: 4.5,
+        numReviews: 4,
+    },
+    {
+        name: 'Men Leather Shoe',
+        image: '/images/a7.jpg',
+        description:
+            'A wedge-like sandals that provides comfort to your feet. it is very easy and comfortable. Made with a mirror face material which you can easily clean anytime, anywhere and wherever with ease',
+        brand: 'Men Fashion',
+        category: 'Fashion',
+        price: 4000,
+        countInStock: 3,
+        rating: 4.5,
+        numReviews: 4,
+    },
+    {
+        name: 'Female Bluish Hill',
+        image: '/images/a8.png',
+        description:
+            'A wedge-like sandals that provides comfort to your feet. it is very easy and comfortable. Made with a mirror face material which you can easily clean anytime, anywhere and wherever with ease',
+        brand: 'Shiny',
+        category: 'Fashion',
+        price: 4000,
+        countInStock: 3,
+        rating: 4.5,
+        numReviews: 4,
+    },
+    {
+        name: 'Men Leather Shoe',
+        image: '/images/a9.jpg',
+        description:
+            'A wedge-like sandals that provides comfort to your feet. it is very easy and comfortable. Made with a mirror face material which you can easily clean anytime, anywhere and wherever with ease',
+        brand: 'Shiny',
+        category: 'Fashion',
+        price: 6000,
+        countInStock: 3,
+        rating: 4.5,
+        numReviews: 4,
+    },
+    {
+        name: 'Female shiny Red Hill',
+        image: '/images/a10.png',
+        description:
+            'A wedge-like sandals that provides comfort to your feet. it is very easy and comfortable. Made with a mirror face material which you can easily clean anytime, anywhere and wherever with ease',
+        brand: 'Shiny',
+        category: 'Fashion',
+        price: 4000,
+        countInStock: 3,
+        rating: 4.5,
+        numReviews: 4,
+    },
+    {
+        name: 'Male shiny Red',
+        image: '/images/a11.jpg',
+        description:
+            'A wedge-like sandals that provides comfort to your feet. it is very easy and comfortable. Made with a mirror face material which you can easily clean anytime, anywhere and wherever with ease',
+        brand: 'Shiny',
+        category: 'Fashion',
+        price: 3000,
+        countInStock: 3,
+        rating: 4.5,
+        numReviews: 4,
+    },
+]
+
+export default products;
