@@ -3,8 +3,8 @@ import { Route } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { LinkContainer } from "react-router-bootstrap"
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap"
-import { logout } from "../actions/userActions"
 import SearchBox from "./SearchBox"
+import { logout } from "../actions/userActions"
 
 const Header = () => {
   const dispatch = useDispatch()
@@ -15,12 +15,13 @@ const Header = () => {
   const logoutHandler = () => {
     dispatch(logout())
   }
+
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand> S_Shop</Navbar.Brand>
+            <Navbar.Brand>ProShop</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -28,7 +29,7 @@ const Header = () => {
             <Nav className="ml-auto">
               <LinkContainer to="/cart">
                 <Nav.Link>
-                  <i className="fas fa-shopping-cart"></i>Cart
+                  <i className="fas fa-shopping-cart"></i> Cart
                 </Nav.Link>
               </LinkContainer>
               {userInfo ? (
@@ -43,7 +44,7 @@ const Header = () => {
               ) : (
                 <LinkContainer to="/login">
                   <Nav.Link>
-                    <i className="fas fa-user"></i>Sign In
+                    <i className="fas fa-user"></i> Sign In
                   </Nav.Link>
                 </LinkContainer>
               )}

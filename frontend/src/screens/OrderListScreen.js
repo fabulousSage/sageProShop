@@ -9,6 +9,12 @@ import { listOrders } from "../actions/orderActions"
 const OrderListScreen = ({ history }) => {
   const dispatch = useDispatch()
 
+  // const orderList = useSelector((state) => state.orderList)
+  // let { orders, loading, error } = orderList
+  // orders = orderList.order ? orderList.order : {}
+  // loading = orderList.loading
+  // error = orderList.error
+
   const orderList = useSelector((state) => state.orderList)
   const { loading, error, orders } = orderList
 
@@ -43,7 +49,6 @@ const OrderListScreen = ({ history }) => {
               <th></th>
             </tr>
           </thead>
-
           <tbody>
             {orders &&
               orders.map((order) => (
@@ -51,7 +56,7 @@ const OrderListScreen = ({ history }) => {
                   <td>{order._id}</td>
                   <td>{order.user && order.user.name}</td>
                   <td>{order.createdAt.substring(0, 10)}</td>
-                  <td>{order.totalPrice}</td>
+                  <td>${order.totalPrice}</td>
                   <td>
                     {order.isPaid ? (
                       order.paidAt.substring(0, 10)
@@ -66,11 +71,10 @@ const OrderListScreen = ({ history }) => {
                       <i className="fas fa-times" style={{ color: "red" }}></i>
                     )}
                   </td>
-
                   <td>
                     <LinkContainer to={`/order/${order._id}`}>
                       <Button variant="light" className="btn-sm">
-                        <i class="fas fa-edit">Details</i>
+                        Details
                       </Button>
                     </LinkContainer>
                   </td>
