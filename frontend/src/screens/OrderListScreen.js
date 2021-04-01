@@ -15,11 +15,11 @@ const OrderListScreen = ({ history }) => {
   // loading = orderList.loading
   // error = orderList.error
 
-  const orderList = useSelector((state) => state.orderList)
-  const { loading, error, orders } = orderList
-
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
+
+  const orderList = useSelector((state) => state.orderList || {})
+  const { loading, error, orders } = orderList
 
   useEffect(() => {
     if (userInfo && userInfo.isAdmin) {
